@@ -27,7 +27,7 @@ async function fetchData(urlApi, options) {
       .map(
         (video) => `
     <div class="group relative">
-      <a href="${`https://www.youtube.com/watch?v=${video.videoId}`}">
+      <a target=”_blank” href="${`https://www.youtube.com/watch?v=${video.videoId}`}">
         <div class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
           <img src="${video.thumbnail[0].url}" alt="" class="w-full" />
         </div>
